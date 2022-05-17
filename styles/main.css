@@ -6,10 +6,21 @@
 }
 
 body{
-    background-color: #a6dbdb;
-    align-items: center;
-    flex: auto;
+    background-color: #a6dbdb;   
 }
+
+menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 1000px) {
+    menu{
+        justify-content: center;
+    }
+}
+
 
 header, footer{
     width: 100%;
@@ -19,7 +30,7 @@ header{
     padding: 1% 0%;
 }
 
-ul{
+ul, menu{
     list-style-type: none;
 }
 h1{
@@ -28,7 +39,6 @@ h1{
 
 footer{
     position: fixed;
-    left: 0;
     bottom: 0;
     background-color: #dba6db;
     text-align: center;
