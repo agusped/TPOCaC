@@ -33,7 +33,7 @@ header{
 ul, menu{
     list-style-type: none;
 }
-h1{
+h1, article{
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ footer{
     padding: 1% 0%;
 }
 
-li{
+menu li{
     float: left;
     padding: .5%;
     background-color: #dba6db;
@@ -53,6 +53,13 @@ li{
     margin: .5%;
     text-align: center;
 }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* display secundario de informacion */
 
 .img_wrap {
     position: relative;
@@ -78,9 +85,4 @@ li{
 .img_wrap:hover .rec_info {
     visibility: visible;
     opacity: 1;
-}
-
-a{
-    text-decoration: none;
-    color: #000;
 }
