@@ -1,14 +1,36 @@
+/* basics */
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
+    text-align: center;
 }
 
 body{
-    background-color: #a6dbdb;   
+    background-color: #a6dbdb;
+    margin-bottom: 6em;
+    max-width: 100%;
 }
 
+header, footer{
+    width: 100%;
+}
+header{
+    background-color: #dba6db;
+    padding: 1% 0%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #dba6db;
+    text-align: center;
+    padding: 1% 0%;
+    display: block;
+}
+
+/* Organizacion de homescreen */
 menu{
     display: flex;
     flex-wrap: wrap;
@@ -19,30 +41,36 @@ menu{
     menu{
         justify-content: center;
     }
+    article *{
+        text-align: center;
+        line-height: 1;
+        padding: 10px;
+    }
+    ol{
+        line-height: 1.5;
+    }
+    article img{
+        width: 70%;
+    }
 }
 
-
-header, footer{
-    width: 100%;
-}
-header{
-    background-color: #dba6db;
-    padding: 1% 0%;
-}
 
 ul, menu{
     list-style-type: none;
 }
-h1, article{
+h1, h2{
     text-align: center;
 }
+h2{
+    padding: 1% 0;
+}
 
-footer{
-    position: fixed;
-    bottom: 0;
-    background-color: #dba6db;
-    text-align: center;
-    padding: 1% 0%;
+.instrucciones, .ingredientes{
+    border: 1em solid #dba6db;
+    border-radius: 10px;
+    padding: 3% 2.5%;
+    margin: 2% 0%;
+    list-style-position: inside;
 }
 
 menu li{
@@ -61,6 +89,10 @@ a{
 
 /* display secundario de informacion */
 
+.container{
+    display: table-cell;
+    vertical-align: middle;
+}
 .img_wrap {
     position: relative;
 }
@@ -85,4 +117,11 @@ a{
 .img_wrap:hover .rec_info {
     visibility: visible;
     opacity: 1;
+}
+
+@media screen and (min-width: 1000px) {
+    article{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }

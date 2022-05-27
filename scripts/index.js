@@ -4,7 +4,6 @@ header=`
     Qisin
 </a>
 </h1>
-<br>
 `
 
 var footer=`
