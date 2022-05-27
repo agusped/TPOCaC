@@ -10,14 +10,16 @@
 </head>
 <body>
     <header></header>
-    <form action="">
-        <label for="titulo">Escribí el nombre de la receta</label>
-        <input type="text" id="titulo" name="titulo">
-        <fieldset>
-            <legend>Ingredientes</legend>
-            
-
-        </section>
+    <form name="contact" action="">
+        <label for="titulo">Escribí el nombre de la receta (Maximo 20 caracteres)</label>
+        <p><input type="text" id="titulo" name="titulo" maxlength="20" required></p>
+        <label for="porciones">¿Cuántas porciones salen?</label>
+        <p><input type="number" name="porciones" id="porciones" required></p>
+        <label for="ingredientes">Ingrese la lista de ingredientes</label>
+        <p><textarea name="ingredientes" rows="10" cols="30" id="ingredientes" maxlength="1000"></textarea></p>
+        <label for="instrucciones">Ingrese la lista de instrucciones</label>
+        <p><textarea name="instrucciones" rows="10" cols="30" maxlength="1000" required></textarea></p>
+        <input type="submit" value="Enviar">
     </form>
     <footer></footer>
     <script src="scripts/index.js"></script>

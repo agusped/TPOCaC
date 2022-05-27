@@ -73,6 +73,29 @@ h2{
     list-style-position: inside;
 }
 
+form, form *{
+    padding: 2% 0;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #dba6db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #1c871c;
+}
+
 menu li{
     float: left;
     padding: .5%;
@@ -120,7 +143,7 @@ a{
 }
 
 @media screen and (min-width: 1000px) {
-    article{
+    article, form{
         max-width: 1000px;
         margin: 0 auto;
     }
