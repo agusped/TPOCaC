@@ -1,6 +1,6 @@
 /* basics */
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
     border: 0;
@@ -37,6 +37,8 @@ menu{
     justify-content: flex-start;
 }
 
+/* media query para celulares 
+(consideré redundante un corte para tablets ya que el la versión base opera bien*/
 @media screen and (max-width: 1000px) {
     menu{
         justify-content: center;
@@ -49,8 +51,8 @@ menu{
     ol{
         line-height: 1.5;
     }
-    article img{
-        width: 70%;
+    img{
+        width: 90%;
     }
 }
 
@@ -73,11 +75,12 @@ h2{
     list-style-position: inside;
 }
 
+/* Formulario */
 form, form *{
     padding: 2% 0;
 }
 input[type=text], textarea {
-    width: 100%;
+    width: 60%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
@@ -85,11 +88,16 @@ input[type=text], textarea {
     resize: vertical;
 }
 input[type=submit] {
+    width: 20%;
     background-color: #dba6db;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+}
+input[type=number]{
+    width: 20%;
+    height: 20%;
 }
   
 input[type=submit]:hover {
@@ -142,6 +150,7 @@ a{
     opacity: 1;
 }
 
+/* tamaño del artículo */
 @media screen and (min-width: 1000px) {
     article, form{
         max-width: 1000px;

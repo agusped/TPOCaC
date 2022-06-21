@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <title>Contactanos</title>
+    <!-- Preferí realizar el favicon con respaldo local en vez de un call a fontawesome -->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="scripts/validation.js"></script>
 </head>
 <body>
     <header></header>
-    <form name="contact" action="">
+    <form name="contact" id="contact" onsubmit="return validation()" method="get">
         <label for="titulo">Escribí el nombre de la receta (Maximo 20 caracteres)</label>
-        <p><input type="text" id="titulo" name="titulo" maxlength="20" required></p>
+        <p><input type="text" id="titulo" name="titulo" maxlength="20"></p>
         <label for="porciones">¿Cuántas porciones salen?</label>
-        <p><input type="number" name="porciones" id="porciones" required></p>
+        <p><input type="number" name="porciones" id="porciones"></p>
         <label for="ingredientes">Ingrese la lista de ingredientes</label>
         <p><textarea name="ingredientes" rows="10" cols="30" id="ingredientes" maxlength="1000"></textarea></p>
         <label for="instrucciones">Ingrese la lista de instrucciones</label>
-        <p><textarea name="instrucciones" rows="10" cols="30" maxlength="1000" required></textarea></p>
+        <p><textarea name="instrucciones" rows="10" cols="30" maxlength="1000"></textarea></p>
         <input type="submit" value="Enviar">
     </form>
     <footer></footer>
-    <script src="scripts/index.js"></script>
+    <!-- <script src="scripts/index.js"></script> -->
 </body>
 </html>
